@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IceCreamy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="bg-shapes">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!-- HOME -->
+<section id="homePage" class="page active">
+
+  <div class="hero">
+
+    <p class="brand">IceCreamy Factory</p>
+
+    <div class="icecream-container">
+
+      <div class="floating-text">
+        CREATE YOUR ICECREAMY 🍦
+      </div>
+
+      <div id="homeIcecream" class="icecream-home">
+        <div class="home-shine"></div>
+        <div class="scoop"></div>
+        <div class="cone"></div>
+      </div>
+
+    </div>
+
+    <p class="subtitle">Choose your flavor, style, and toppings like a real ice cream designer.</p>
+
+    <button id="startBtn">START ORDER ✨</button>
+
+  </div>
+
+</section>
+
+<!-- CUSTOM -->
+<section id="customPage" class="page">
+
+  <div class="builder-container">
+
+    <!-- PREVIEW -->
+    <div class="preview">
+
+      <div class="preview-card">
+        <p class="section-tag">Live Preview</p>
+
+        <div id="icecreamPreview" class="icecream-preview">
+
+          <div id="toppings"></div>
+
+          <div id="previewScoop" class="preview-scoop"></div>
+
+          <div id="previewBase" class="preview-cone"></div>
+
+        </div>
+
+        <p class="price">Total: <span id="totalPrice">$4.00</span></p>
+      </div>
+
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="controls">
+
+      <p class="section-tag">Customize Order</p>
+      <h1>Build IceCream 🍨</h1>
+      <p class="small-text">Make your own premium ice cream with fresh flavors and crunchy toppings.</p>
+
+      <label>Style</label>
+      <select id="styleSelect">
+        <option value="cone">Cone</option>
+        <option value="cup">Cup</option>
+      </select>
+
+      <label>Flavor</label>
+      <select id="flavorSelect">
+        <option value="#ffde59">Mango</option>
+        <option value="#ff77b7" selected>Strawberry</option>
+        <option value="#6b3f25">Chocolate</option>
+        <option value="#c89b6d">Cookies</option>
+        <option value="#fff3c4">Vanilla</option>
+        <option value="#9be7c2">Pistachio</option>
+      </select>
+
+      <label>Toppings</label>
+
+      <div class="checks">
+
+        <label class="check-card">
+          <input type="checkbox" value="cookie">
+          <span>Biscuit Sticks</span>
+        </label>
+
+        <label class="check-card">
+          <input type="checkbox" value="chips">
+          <span>Chocolate Chips</span>
+        </label>
+
+        <label class="check-card">
+          <input type="checkbox" value="sprinkles">
+          <span>Rainbow Sprinkles</span>
+        </label>
+
+        <label class="check-card">
+          <input type="checkbox" value="nuts">
+          <span>Nuts</span>
+        </label>
+
+      </div>
+
+      <button id="doneBtn">DONE 🍦</button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FINAL -->
+<section id="finalPage" class="page">
+
+  <div class="final-box" id="finalBox"></div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
